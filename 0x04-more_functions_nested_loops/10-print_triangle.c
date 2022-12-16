@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - triangle
- * @size: num_lines
+ * @size: number
  * Return: 0
  */
 
@@ -25,5 +25,6 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-	else_putchar('\n');
+	else
+		_putchar('\n');
 }
