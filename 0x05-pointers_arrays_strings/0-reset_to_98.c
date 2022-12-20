@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mill.h"
 
 /**
  * reset_to_98 - takes the value of the pointer and update the value
