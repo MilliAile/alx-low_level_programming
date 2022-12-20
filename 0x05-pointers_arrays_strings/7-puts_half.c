@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mill.h"
 /**
  * puts_half - prints a string
  * @str: the sting pointer
