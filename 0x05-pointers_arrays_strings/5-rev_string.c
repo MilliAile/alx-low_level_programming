@@ -20,5 +20,6 @@ void rev_string(char *s)
 		s[j] = word;
 		j++;
 		i--;
+	}
 
 }
