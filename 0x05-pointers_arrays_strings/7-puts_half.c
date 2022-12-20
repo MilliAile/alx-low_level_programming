@@ -1,4 +1,5 @@
 #include "mill.h"
+#include <stdio.h>
 /**
  * puts_half - prints a string
  * @str: the sting pointer
@@ -9,15 +10,11 @@ void puts_half(char *str)
 	int i;
 	int n;
 
-	while (str[i] != '\0')
-		i += 1;
-	n = i / 2;
-	if (i % 2 == 1)
-		n += 1;
-	while (str[n] != '\0')
-	{
-		_putchar(*(str + n));
-		n++;
-	}
+	if (strlen(str) % 2 == 1)
+		n = strlen(str) / 2 + 1;
+	else
+		n = strlen(str) / 2;
+	for (i = n; i < strlen(str); i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
