@@ -1,22 +1,13 @@
-#include "main.h"
-#include <stdio.h>
-
-
+#include "mill.h"
 
 /**
- * main - check the code
+ * swap_int - replace the numbers with new
+ * @a: define the first int
+ * @b: define the second int
  * Return: Always 0.
  */
-int main(void)
+void swap_int(int *a, int *b)
 {
-
-	    int a;
-	    int b;
-
-	    a = 90;
-	    b = 34;
-	    printf("a=%d, b=%d\n", a, b)
-		    swap_int(&a, &b);
-	    printf("a=%d, b=%d\n", a, b);
-	    return (0);
+	a = 90;
+	b = 34;
 }
