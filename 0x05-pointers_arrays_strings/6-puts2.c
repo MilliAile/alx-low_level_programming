@@ -1,4 +1,4 @@
-include "mill.h"
+#include "mill.h"
 /**
  * puts2 - print string starting from the first
  * @str: the string variable
