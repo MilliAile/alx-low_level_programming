@@ -1,4 +1,5 @@
 #include "mill.h"
+#include <stdio.h>
 
 /**
  * swap_int - replace the numbers with new
@@ -8,7 +9,8 @@
  */
 void swap_int(int *a, int *b)
 {
-	*a =+ *b;
-	*b = *a - *b;
-	*a = *a - *b;
+	int m:
+	m = a*;
+	*a = *b;
+	*b = m;
 }
