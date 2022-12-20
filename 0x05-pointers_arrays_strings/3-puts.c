@@ -1,7 +1,7 @@
 #include "mill.h"
 
 /**
- * _put - string followed by newline
+ * _puts - string followed by newline
  * @str: string to be printed
  * Return: nothing
  */
