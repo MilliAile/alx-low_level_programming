@@ -5,13 +5,22 @@
  * @src: the string to be appended
  * Return: string @dest
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int m = 0, n = 0;
+	int m = 0;
+	int n;
 
-	while (dest[m++])
+	while (dest[m != '\0'])
+	{
+		m++;
+	}
+	n = 0;
+	while (src[n] != '\0')
+	{
+		dest[m] = src[n];
+		m++;
 		n++;
-	for (m = 0; src[m]; m++)
-		dest[n++] = src[m];
+	}
+	dest[m] = '\0';
 	return (dest);
 }
