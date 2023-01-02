@@ -7,10 +7,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int m = 0;
+	int m;
 	int n;
 
-	while (dest[m != '\0'])
+	m = 0;
+	while (dest[m] != '\0')
 	{
 		m++;
 	}
