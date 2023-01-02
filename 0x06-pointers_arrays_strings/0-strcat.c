@@ -1,11 +1,11 @@
-#include"milla.h"
+#include "milla.h"
 /**
  * _strcat - concatinate the string
  * @dest: string to be concatinated upon
  * @src: the string to be appended
  * Return: string @dest
  */
-char *_strcat(char *dest, const char *src)
+char *strcat(char *dest, const char *src)
 {
 	int m = 0, n = 0;
 
