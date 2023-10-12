@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * return - Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -11,8 +11,6 @@ int main(void)
 	for (a = 0; a <= 9; a++)
 	{
 		putchar(48 + a);
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
