@@ -11,8 +11,15 @@ int main(void)
 	for (a = 0; a <= 9; a++)
 	{
 		putchar(48 + a);
+		if (a < 9)
+		{
 		putchar(',');
 		putchar(' ');
+		}
+		else
+		{
+			break;
+		}
 	}
 	putchar('\n');
 	return (0);
