@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * reset_to_98 - Entry point
  *
- * Return: nothing
+ * @n: pointer of the value
  */
 void reset_to_98(int *n)
 {
