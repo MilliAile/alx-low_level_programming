@@ -1,5 +1,5 @@
-#ifndef <MAIN.H>
-#define <MAIN.H>
+#ifndef HEADER.H
+#define HEADER.H
 #include <stdio>
 
 int _putchar(char c);

@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int a = 5;
+	int a = 402;
 
 	reset_to_98(&a);
 	return (0);
