@@ -1,13 +1,10 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - Entry point
  *
- * Return: 0
+ * Return: nothing
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	int a = 402;
-
-	reset_to_98(&a);
-	return (0);
+	*n = 98;
 }
