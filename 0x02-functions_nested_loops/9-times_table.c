@@ -17,7 +17,22 @@ void times_table(void)
 			if (b < 9)
 			{
 				printf(", ");
-				if (i <= 9)
+				if (i > 8)
+				{
+				}
+				else if (i == 8 && b == 2)
+				{
+				}
+				else if (i > 8 && b == 1)
+				{
+				}
+				else if(i > 4 && b == 1)
+				{
+				}
+				else if (i == 8 && b == 4)
+				{
+				}
+				else
 				{
 					printf(" ");
 				}
