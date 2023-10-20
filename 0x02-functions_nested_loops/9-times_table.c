@@ -17,6 +17,10 @@ void times_table(void)
 			if (b < 9)
 			{
 				printf(", ");
+				if (i <= 9)
+				{
+					printf(" ");
+				}
 			}
 		}
 		printf("\n");
