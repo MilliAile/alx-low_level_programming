@@ -13,29 +13,10 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			i = a * b;
-			printf("%d", i);
+			printf("%2d", i);
 			if (b < 9)
 			{
 				printf(", ");
-				if (i > 8)
-				{
-				}
-				else if (i == 8 && b == 2)
-				{
-				}
-				else if (i > 8 && b == 1)
-				{
-				}
-				else if(i > 4 && b == 1)
-				{
-				}
-				else if (i == 8 && b == 4)
-				{
-				}
-				else
-				{
-					printf(" ");
-				}
 			}
 		}
 		printf("\n");
