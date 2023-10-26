@@ -1,5 +1,8 @@
 #include "main.h"
 /**
+ * factorial - function that print factorial of numbers
+ * @n: integer input
+ * Return: the result
  */
 int factorial(int n)
 {
