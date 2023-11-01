@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	buffer = malloc(size * sizeof(char));
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < size; i++)
 	{
 		buffer[i] = c;
 	}
