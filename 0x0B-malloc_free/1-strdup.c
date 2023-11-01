@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (j < i)
+	while (j <= i)
 	{
 		dup[j] = str[j];
 		j++;
