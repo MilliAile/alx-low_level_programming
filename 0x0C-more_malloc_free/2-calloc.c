@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * _calloc - function that allacate space for an array of elements
  * @nmemb: the number of elements
@@ -19,6 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+	memset(p, 0, nmemb * size);
 	return (p);
 
 }
