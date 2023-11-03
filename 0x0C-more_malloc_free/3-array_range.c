@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdlib.h"
+#include <stdlib.h>
 /**
  * array_range - function that returns array of int from min to max
  * @min: the first element of the array
@@ -24,14 +24,15 @@ int *array_range(int min, int max)
 	{
 		size = max - min + 1;
 	}
-	ptr = malloc(sizeof(int) * size);
+	ptr = malloc(sizeof(int) * (max - min) + sizeof(int));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i <= size; i++)
 	{
-		ptr[i] = min++;
+		ptr[i] = min;
+		min++;
 	}
 	return (ptr);
 }
