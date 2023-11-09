@@ -7,7 +7,7 @@
  * @argv: the content of commant line arguement contained in an array
  * Return: 0 on success, and 98, 99 or 100 on error
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
