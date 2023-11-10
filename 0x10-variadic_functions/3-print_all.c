@@ -40,10 +40,10 @@ void print_all(const char * const format, ...)
 				comma++;
 				break;
 			default:
-				comma--;
+				comma = -1;
 				break;
 		}
-		if (i < (strlen(format) - 1) && comma > 0)
+		if (i < (strlen(format) - 1) && comma == 1)
 			printf(", ");
 		i++;
 	} printf("\n");
