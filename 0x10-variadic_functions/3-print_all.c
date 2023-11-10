@@ -8,7 +8,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, comma = 0;
+	unsigned int i = 0, comma = 1;
 	char *string;
 	va_list type;
 
@@ -40,10 +40,10 @@ void print_all(const char * const format, ...)
 				comma++;
 				break;
 			default:
-				comma = -1;
+				comma--;
 				break;
 		}
-		if (i < (strlen(format) - 1) && comma == 1)
+		if (i < (strlen(format) - 1) && comma > 1)
 			printf(", ");
 		i++;
 	} printf("\n");
