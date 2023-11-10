@@ -8,45 +8,44 @@
  */
 void print_all(const char * const format, ...)
 {
-	int length, a, i = 0;
-	char c;
-	double f;
+	unsigned int i = 0, comma = 0;
 	char *string;
 	va_list type;
 
 	va_start(type, format);
-	length = strlen(format);
-	while (i < length)
+	while (format == NULL)
+		return;
+	while (format[i] != '\0')
 	{
-		if (format[i] == 'i')
-		{
-			a = va_arg(type, int);
-			printf("%d", a);
+		switch (format[i])
+		{ case 'i':
+				printf("%d", va_arg(type, int));
+				comma++;
+				break;
+			case 'c':
+				printf("%c", va_arg(type, int));
+				comma++;
+				break;
+			case 'f':
+				printf("%f", va_arg(type, double));
+				comma++;
+				break;
+			case 's':
+				string = va_arg(type, char*);
+				if (string == NULL)
+				{ printf("(nil)");
+					comma++;
+					break;
+				} printf("%s", string);
+				comma++;
+				break;
+			default:
+				comma--;
+				break;
 		}
-		else if (format[i] == 'c')
-		{
-			c = va_arg(type, int);
-			printf("%c", c);
-		}
-		else if (format[i] == 'f')
-		{
-			f = va_arg(type, double);
-			printf("%f", f);
-		}
-		else if (format[i] == 's')
-		{
-			string = va_arg(type, char*);
-			printf("%s", string);
-		}
-		else
-		{
-			continue;
-		}
-		if (i < (length - 1))
+		if (i < (strlen(format) - 1) && comma > 0)
 			printf(", ");
 		i++;
-
-	}
-	printf("\n");
+	} printf("\n");
 	va_end(type);
 }
