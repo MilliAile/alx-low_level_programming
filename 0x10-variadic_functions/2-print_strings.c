@@ -6,6 +6,7 @@
  * print_strings - function that returns strings with separator
  * @separator: string to separate parameter strings
  * @n: the expected number of parameters
+ * Discription: this function print strings with a comma sparator
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
