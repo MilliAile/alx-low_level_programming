@@ -38,6 +38,10 @@ void print_all(const char * const format, ...)
 			string = va_arg(type, char*);
 			printf("%s", string);
 		}
+		else
+		{
+			continue;
+		}
 		if (i < (length - 1))
 			printf(", ");
 
