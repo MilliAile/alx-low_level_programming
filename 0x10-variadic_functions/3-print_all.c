@@ -1,14 +1,14 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
 /**
  * print_all - print all type
  * @format: the format of the args is given
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, comma = 1;
+	unsigned int i = 0;
+	int comma = 0;
 	char *string;
 	va_list type;
 
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				comma--;
 				break;
 		}
-		if (i < (strlen(format) - 1) && comma > 1)
+		if (i < (sizeof(format) - 2) && comma > 0)
 			printf(", ");
 		i++;
 	} printf("\n");
