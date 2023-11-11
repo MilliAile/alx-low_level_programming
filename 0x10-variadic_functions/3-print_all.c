@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 	while (format == NULL)
 		return;
 	while (format[i] != '\0')
-	{
+	{ comma = 0;
 		switch (format[i])
 		{ case 'i':
 				printf("%d", va_arg(type, int));
