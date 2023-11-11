@@ -20,27 +20,27 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{ case 'i':
 				printf("%d", va_arg(type, int));
-				comma++;
+				++comma;
 				break;
 			case 'c':
 				printf("%c", va_arg(type, int));
-				comma++;
+				++comma;
 				break;
 			case 'f':
 				printf("%f", va_arg(type, double));
-				comma++;
+				++comma;
 				break;
 			case 's':
 				string = va_arg(type, char*);
 				if (string == NULL)
 				{ printf("(nil)");
-					comma++;
+					++comma;
 					break;
 				} printf("%s", string);
-				comma++;
+				++comma;
 				break;
 			default:
-				comma--;
+				--comma;
 				break;
 		}
 		if (i < (strlen(format) - 1) && comma > 0)
