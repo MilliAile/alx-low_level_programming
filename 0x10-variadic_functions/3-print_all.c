@@ -7,16 +7,16 @@
  * @format: the format of the args is given
  */
 void print_all(const char * const format, ...)
-{ unsigned int i = 0;
-	int comma = 0;
+{ unsigned int i = 0, comma;
 	char *string;
 	va_list type;
 
 	va_start(type, format);
 	while (format == NULL)
-		return;
+		{ printf("\n");
+			return; }
 	while (format[i] != '\0')
-	{ comma = 0;
+	{ comma = 1;
 		switch (format[i])
 		{ case 'i':
 				printf("%d", va_arg(type, int));
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				--comma;
 				break;
 		}
-		if (i < (strlen(format) - 1) && comma > 0)
+		if (i < (strlen(format) - 1) && comma > 1)
 			printf(", ");
 		i++;
 	} printf("\n");
